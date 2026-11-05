@@ -3,10 +3,10 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$host = "localhost";
-$user = "root";
-$pass = "coco";
-$dbname = "commoncents";
+$host = "DB_HOST";
+$user = "DB_USER";
+$pass = "DB_PASSWORD";
+$dbname = "DB_NAME";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
